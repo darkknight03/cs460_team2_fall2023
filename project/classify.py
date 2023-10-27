@@ -1,6 +1,7 @@
 # Description: This file contains the code to classify an email as phishing or not phishing.
 import joblib
-from preprocess import preprocess
+from email_modeling.preprocess import preprocess
+from url_modeling.preprocess_html import read_html
 
 
 def classify_email(email):
@@ -10,9 +11,9 @@ def classify_email(email):
 
     # Load your trained model, label encoder, and TF-IDF vectorizer
     print("Loading model...")
-    loaded_model = joblib.load('/Users/wolf/dev/cs460/dev/logistic.pkl')
-    label_encoder = joblib.load('/Users/wolf/dev/cs460/dev/label_encoder.pkl')
-    tfidf_vectorizer = joblib.load('/Users/wolf/dev/cs460/dev/tfidf_vectorizer.pkl')
+    loaded_model = joblib.load('email_modeling/logistic.pkl')
+    label_encoder = joblib.load('email_modeling/label_encoder.pkl')
+    tfidf_vectorizer = joblib.load('email_modeling/tfidf_vectorizer.pkl')
 
     print("Classifying email...")
     # Transform the preprocessed email text using the same vectorizer
@@ -24,14 +25,24 @@ def classify_email(email):
     # Convert the predicted class back to its original label
     predicted_label = label_encoder.inverse_transform(predicted_class)
 
-    # TODO:return boolean value for phishing or not phishing
-    if predicted_label[0] == 'Safe Email':
-        return False
-    else:
-        return True
+    return predicted_label == 'Phishing Email'
 
 
 def classify_url(url):
-    return False
+    # Preprocess the html text
+    print("Preprocessing html...")
+    preprocessed_html = read_html(url)
 
-# print(f"Predicted Email Class: {label[0]}")
+    # Load your trained mode and TF-IDF vectorizer
+    print("Loading model...")
+    loaded_model = joblib.load('url_modeling/model_svc.pkl')
+    tfidf_vectorizer = joblib.load('url_modeling/tfidf_vectorizer_html.pkl')
+
+    print("Classifying html...")
+    # Transform the preprocessed html text using the same vectorizer
+    html_vector = tfidf_vectorizer.transform([preprocessed_html])
+
+    # Make a prediction using the loaded model
+    predicted_class = loaded_model.predict(html_vector)
+
+    return predicted_class == 'p'

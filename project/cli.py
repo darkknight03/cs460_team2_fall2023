@@ -1,6 +1,6 @@
 import argparse
 from classify import classify_email, classify_url
-from read_email import read_email
+from email_modeling.read_email import read_email
 
 def cli():
     parser = argparse.ArgumentParser(description="Phishing Detector")
@@ -12,19 +12,18 @@ def cli():
         # check if file exists
 
         subject, sender, links, email_content, has_attachments = read_email(args.file)
-        print(subject)
-        print(sender)
-        print(len(email_content))
-        print(len(links))
-        print(has_attachments)
+        # print(subject)
+        # print(sender)
+        # print(len(email_content))
+        # print(len(links))
+        # print(has_attachments)
         is_phishing = classify_email(email_content)
         if is_phishing:
             print("This file may be a phishing attempt!")
         else:
             print("This file is safe.")
     elif args.url:
-        # is_phishing = classify_url(args.url)
-        is_phishing = True
+        is_phishing = classify_url(args.url)
         if is_phishing:
             print("This URL may be a phishing attempt!")
         else:
