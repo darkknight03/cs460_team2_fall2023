@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
-import urllib3
 import re
+import requests
 
 def preprocess_html(html):
     soup = BeautifulSoup(html, "html.parser")
@@ -9,7 +9,8 @@ def preprocess_html(html):
     return text
 
 def read_html(url):
-    http = urllib3.PoolManager()
-    html_doc = http.request('GET', url)
-    html_data = preprocess_html(html_doc)
+    response = requests.get(url)
+
+    html_content = response.text
+    html_data = preprocess_html(html_content)
     return html_data
