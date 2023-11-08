@@ -1,15 +1,17 @@
 import re
 import whois
 from datetime import datetime
+import request
 
 # Define heuristics and their weights
-#heuristics = {
-#    'Domain Age': 10,
-#    'URL Length': 5,
-#    'Contains IP Address': 8,
-#    'SSL Certificate': 10,
-#    'Keyword Match': 7
-#}
+# ref: https://drive.google.com/file/d/1gGAMknkZAiK8m01vtpQJebwuTdoxAMVP/view?usp=sharing, pp.26
+heuristics = {
+    'Domain Age': 10,
+    'URL Length': 5,
+    'Contains IP Address': 8,
+    'SSL Certificate': 10,
+    'Keyword Match': 7
+}
 
 # Sample URL for analysis
 url = "https://example-phishing-url.com/login.php"
@@ -58,7 +60,18 @@ def contains_ip_address(url):
     return int(bool(re.search(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}', url)))
 
 def has_ssl_certificate(url):
-    return 0  # Implement logic to check SSL certificate, 0 for no certificate, 10 for a valid certificate
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            if response.url.startswith("https://"):
+                return 1 # 1 for has ssl certificate
+            else:
+                return 0 # 0 for does not have ssl certificate
+        else:
+            print(f"HTTP request failed with status code: {response.status_code}")
+    except requests.exceptions.RequestException as e:
+        print(f"Request error: {e}")
+    
 
 def keyword_match(url):
     return int("login" in url)  # 1 if keyword exists, 0 if not
