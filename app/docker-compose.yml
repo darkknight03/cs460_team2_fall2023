@@ -8,3 +8,7 @@ services:
       - "8080:80"
     env_file:
       - .env
+    volumes:
+      # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      # TODO change to your own local computer path
+      - /Users/mazerxu/Desktop/MazerMBP/academic/UIUC/2023Fall/CS460/cs460_team2_fall2023/app/share:/usr/local/src/myscripts/share
