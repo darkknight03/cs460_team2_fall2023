@@ -1,0 +1,1473 @@
+<html dir="ltr" prefix="og: https://ogp.me/ns#" class=" js" lang="en"><head>
+<meta charset="utf-8"><script type="text/javascript" src="https://bam-cell.nr-data.net/1/NRJS-302460acab5299c10b7?a=604633541&amp;v=1215.1253ab8&amp;to=MVVTbUEHWUpUAhcPWQgfcFpHD1hXGhECAVM5U1BaWwM%3D&amp;rst=2612&amp;ck=1&amp;ref=https://www.greenbiz.com/&amp;ap=21&amp;be=461&amp;fe=2418&amp;dc=962&amp;perf=%7B%22timing%22:%7B%22of%22:1648197958403,%22n%22:0,%22f%22:117,%22dn%22:148,%22dne%22:149,%22c%22:150,%22s%22:204,%22ce%22:273,%22rq%22:273,%22rp%22:445,%22rpe%22:445,%22dl%22:446,%22di%22:960,%22ds%22:962,%22de%22:1013,%22dc%22:2417,%22l%22:2417,%22le%22:2418%7D,%22navigation%22:%7B%7D%7D&amp;fcp=933&amp;at=HRJQGwkdSkQ%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1215.min.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script src="https://connect.facebook.net/signals/config/1902082430030114?v=2.9.57&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://static.ads-twitter.com/uwt.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script type="text/javascript" async="" src="https://www.google.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-YF33LS143Q&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MD8PC4J"></script><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-302460acab5299c10b7",applicationID:"604633541"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(9),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!P++){var t=M.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+M.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+M.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,y="addEventListener",h="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},T=w&&b&&b[y]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:T,userAgent:s,disabled:E};if(!E){t(1),t(7),g[y]?(g[y]("DOMContentLoaded",o,l(!1)),m[y]("load",r,l(!1))):(g[h]("onreadystatechange",i),m[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var P=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+<noscript><style>form.antibot * :not(.antibot-message) { display: none !important; }</style>
+</noscript><script>window.dataLayer = window.dataLayer || []; window.dataLayer.push({"event":"metaDescription","drupalLanguage":"en","drupalCountry":"US","siteName":"Greenbiz","entityCreated":"1552279169","entityUid":"1","entityName":"GreenBiz","entityType":"node","entityBundle":"landing_page","entityId":"1","entityTitle":"GreenBiz","userUid":0});</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MD8PC4J');
+</script>
+<link rel="canonical" href="https://www.greenbiz.com/">
+<link rel="shortlink" href="https://www.greenbiz.com/">
+<meta name="description" content="GreenBiz advances the opportunities at the intersection of business, technology and sustainability.">
+<meta name="abstract" content="Through its websites, events, peer-to-peer network and research, GreenBiz promotes the potential to drive transformation and accelerate progress — within companies, industries and in the very nature of business.">
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/4797590/GBZ_D8_Leaderboard', [728, 90], 'div-gpt-ad-1588266779993-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/4797590/GBZ_D8_Leaderboard_2', [728, 90], 'div-gpt-ad-1602710170057-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/4797590/GBZ_D8_Med_Square', [300, 250], 'div-gpt-ad-1588639347976-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<script async="async" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/4797590/GBZ_D8_Med_Square_2', [300, 250], 'div-gpt-ad-1602704827724-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<link rel="shortcut icon" href="/themes/custom/gbz4_radix/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="revision" href="https://www.greenbiz.com/node/1">
+<meta name="facebook-domain-verification" content="ivwf1lv6vnpfui97dqymotj11srpog">
+<title>GreenBiz</title>
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_Ud-WOE4uYODnImQ-g3WNaQAABFIUJr9JHZV7Br21j5w.css">
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_Gxu2MwwgBLW5DdEXutXm-DtVRivgDnom3IrZzDKwZpc.css">
+<script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1063485475/?random=1648197959365&amp;cv=9&amp;fst=1648197959365&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=1600&amp;u_w=3840&amp;u_ah=1560&amp;u_aw=3840&amp;u_cd=24&amp;u_his=50&amp;u_tz=-300&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;gtm=2wg3e0&amp;sendb=1&amp;ig=0&amp;frm=0&amp;url=https%3A%2F%2Fwww.greenbiz.com%2F&amp;tiba=GreenBiz&amp;hn=www.google.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="Azuce85ORtSnWe1MZDTv68qpaW3iHyfL9YbLRy0cwcCZwVnePnOmkUJlG8HGikmOwhZU22dElCcfrfX2HhrBPAkAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A16nvcdeoOAqrJcmjLRpl1I6f3McDD8EfofAYTt/P/H4/AWwB99nxiPp6kA0fXoiZav908Z8etuL16laFPUdfQsAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxBHdr0J44vFBQtZUqX9sjiqf5yWZ/OcHRcRMN3H9TH+t90V/j3ENW6C8+igBZFXMJ7G3Pr8Dd13632aLng42wgAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A88BWHFjcawUfKU3lIejLoryXoyjooBXLgWmGh+hNcqMK44cugvsI5YZbNarYvi3roc1fYbHA1AVbhAtuHZflgEAAAB2eyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IlRydXN0VG9rZW5zIiwiZXhwaXJ5IjoxNjUyNzc0NDAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A8FHS1NmdCwGqD9DwOicnHHY+y27kdWfxKa0YHSGDfv0CSpDKRHTQdQmZVPDUdaFWUsxdgVxlwAd6o+dhJykPA0AAACWeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A8zdXi6dr1hwXEUjQrYiyYQGlU3557y5QWDnN0Lwgj9ePt66XMEvNkVWOEOWPd7TP9sBQ25X0Q15Lr1Nn4oGFQkAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><meta http-equiv="origin-trial" content="A4/Htern2udN9w3yJK9QgWQxQFruxOXsXL7cW60DyCl0EZFGCSme/J33Q/WzF7bBkVvhEWDlcBiUyZaim5CpFQwAAACceyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjQzMTU1MTk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlLCJ1c2FnZSI6InN1YnNldCJ9"><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2022031601.js" async=""></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.greenbiz.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.greenbiz.com"></script></head>
+<body class="node-1 node-landing_page anonymous">
+<a href="#main-content" class="visually-hidden focusable">
+Skip to main content
+</a>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD8PC4J" height="0" width="0" style="display:none;visibility:hidden;"></iframe>
+</noscript>
+<div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+<div class="page front-page">
+<header id="site-header" class="navbar navbar-expand-md d-md-flex justify-content-between align-items-end navbar-dark sticky-top bg-dark p-3">
+<a href="https://www.greenbiz.com/" class="navbar-brand " aria-label="">
+<img src="/themes/custom/gbz4_radix/logo.svg" alt="GreenBiz Logo" class="d-inline-block align-top" width="224" height="42">
+</a>
+<nav id="main-menu" class="main-menu mt-2 mt-sm-0">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a href="https://www.greenbiz.com/insights" class="nav-link">Analysis</a>
+</li>
+<li class="nav-item">
+<a href="https://www.greenbiz.com/events" class="nav-link">Events</a>
+</li>
+<li class="nav-item">
+<a href="https://www.greenbiz.com/webcasts" class="nav-link">Webcasts</a>
+</li>
+<li class="nav-item">
+<a href="https://www.greenbiz.com/videos" class="nav-link">Videos</a>
+</li>
+</ul>
+</nav>
+<div class="collapse navbar-collapse" id="navbar-search-container-mobile">
+
+<nav id="secondary-menu" class="secondary-menu pt-1 pt-md-0">
+<ul class="navbar-nav">
+<li class="nav-item">
+<a href="/collections/climate-tech" class="nav-link" data-drupal-link-system-path="taxonomy/term/2344">Climate Tech</a>
+</li>
+<li class="nav-item">
+<a href="/collections/strategy-finance-esg-issues" class="nav-link" data-drupal-link-system-path="taxonomy/term/1004">ESG/Finance</a>
+</li>
+<li class="nav-item">
+<a href="/collections/circular-economy" class="nav-link" data-drupal-link-system-path="taxonomy/term/1922">Circularity</a>
+</li>
+<li class="nav-item">
+<a href="/collections/sustainability-strategy" class="nav-link" data-drupal-link-system-path="taxonomy/term/2174">Sustainability Strategy</a>
+</li>
+
+<li class="nav-item secondary-menu__offset-item show">
+<a href="#" class="nav-link">More+</a>
+<ul><li class="nav-item">
+<a href="https://www.greenbiz.com/collections/startups" class="nav-link">Startups</a>
+</li></ul>
+</li>
+</ul>
+</nav>
+</div>
+<div class="navbar-social-search-container" id="navbar-search-container-desktop">
+<nav id="social-menu" class="social-menu d-md-flex">
+<ul class="social-menu__items navbar-nav">
+<li class="nav-item">
+<a href="https://twitter.com/greenbiz" class="nav-link" arial-label="Twitter">
+<i class="fab fa-twitter" aria-hidden="true"></i>
+<span class="sr-only">Twitter</span>
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.facebook.com/GreenBiz" class="nav-link" arial-label="Facebook">
+<i class="fab fa-facebook-f" aria-hidden="true"></i>
+<span class="sr-only">Facebook</span>
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.instagram.com/greenbiz_group" class="nav-link" arial-label="Instagram">
+<i class="fab fa-instagram" aria-hidden="true"></i>
+<span class="sr-only">Instagram</span>
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.linkedin.com/company/greenbiz-group" class="nav-link" arial-label="Linkedin">
+<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+<span class="sr-only">Linkedin</span>
+</a>
+</li>
+<li class="nav-item">
+<a href="/rss.xml" class="nav-link" arial-label="This site (RSS)">
+<i class="fas fa-rss" aria-hidden="true"></i>
+<span class="sr-only">This site (RSS)</span>
+</a>
+</li>
+</ul>
+<button id="social-menu-toggle" class="social-menu__toggle">
+<span aria-hidden="true" class="fa fa-plus-square"></span>
+<span class="sr-only">GreenBiz on Social Media</span>
+</button>
+</nav>
+<div class="navbar__search" id="navbar-search">
+<button class="navbar__search-toggle" id="navbar-search-toggle">
+<i class="fas fa-search" aria-hidden="true"></i>
+<span class="sr-only">Search</span>
+</button>
+<form class="views-exposed-form bef-exposed-form" data-drupal-selector="views-exposed-form-search-page-1-xrsdcmdpkp4w6lu2dk7-davy6jsvbnu1mtjd0txugf8" action="/search" method="get" id="views-exposed-form-search-page-1-xrSdCMDPkp4W6Lu2Dk7-daVY6jSVBnU1MTJD0TXUgF8" accept-charset="UTF-8" novalidate="">
+<div class="js-form-item form-item js-form-type-search-api-autocomplete form-item-search-api-fulltext js-form-item-search-api-fulltext form-group">
+<input title="Search" data-drupal-selector="edit-search-api-fulltext" data-search-api-autocomplete-search="search" class="form-autocomplete form-control ui-autocomplete-input" data-autocomplete-path="/search_api_autocomplete/search?display=page_1&amp;&amp;filter=search_api_fulltext" type="text" id="edit-search-api-fulltext" name="search_api_fulltext" value="" size="30" maxlength="128" autocomplete="off">
+</div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"> <input data-drupal-selector="edit-submit-search" type="submit" id="edit-submit-search" value="Search" class="button js-form-submit form-submit btn btn-primary">
+</div>
+</form>
+</div></div>
+<button id="hamburger-menu" class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</header>
+<main class="pb-5">
+<div class="page__content">
+<div data-drupal-messages-fallback="" class="hidden"></div><article role="article" class="node landing-page landing-page--full">
+<div class="layout layout--twocol layout--twocol-60-40 layout--dark">
+<div class="layout__content">
+<div class="layout__column layout__column--first">
+<div class="block-homepage-dark block-front-event-cta article-homepage-featured block-homepage-dark__title">
+<a href="https://events.greenbiz.com/events/circularity/atlanta/2022?utm_medium=gb-site&amp;utm_sou%5B%E2%80%A6%5D=&amp;utm_campaign=c22&amp;utm_content=-early-rate-promo-">
+<div class="event-cta-new__field-cta-image"><figure>
+<img src="/sites/default/files/styles/676x292_event_callout_image/public/2022-03/C22%20-%20Early%20Rate%20900%20x%20400.png?itok=N3C6xNyK" alt="Circularity 22" loading="lazy" width="1142" height="493">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+<h2 class="article-teaser-mini__title">
+<div class="event-cta-new__field-linked-callout-message">Circularity 22: Accelerating the Circular Economy. Register now - rates increase Friday.</div>
+</h2></a>
+</div>
+<div class="views-element-container block-homepage-dark">
+<h2 class="block-homepage-dark__title">Top Stories</h2>
+<div><div class="js-view-dom-id-478fde085c2415c4fd192c0c5a52634c5434d9463a488c70d0d851f1af5de191">
+<div class="views-row"><div>
+<article class="article-homepage-featured">
+<div class="article-homepage-featured__image ]">
+<a href="/article/what-mandatory-sec-disclosure-would-mean-esg-software">
+<picture>
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_lg_1x/public/2022-03/software_sstock.jpg?itok=tuiL70ia 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_lg_2x/public/2022-03/software_sstock.jpg?itok=AElpp3TS 2x" media="(min-width: 1200px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_md_1x/public/2022-03/software_sstock.jpg?itok=wnwwPYT9 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_md_2x/public/2022-03/software_sstock.jpg?itok=sA_G-VJu 2x" media="(min-width: 992px) and (max-width: 1199px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_sm_1x/public/2022-03/software_sstock.jpg?itok=Xj_iPPpa 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_sm_2x/public/2022-03/software_sstock.jpg?itok=GK8g9mJf 2x" media="(min-width: 768px) and (max-width: 991px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xs_1x/public/2022-03/software_sstock.jpg?itok=_R2Va6y5 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xs_2x/public/2022-03/software_sstock.jpg?itok=VA3r7LPY 2x" media="(min-width: 576px) and (max-width: 767px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_1x/public/2022-03/software_sstock.jpg?itok=sYs9toik 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_2x/public/2022-03/software_sstock.jpg?itok=6989DmEW 2x" media="(max-width: 575px)" type="image/jpeg">
+<img src="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_1x/public/2022-03/software_sstock.jpg?itok=sYs9toik" alt="Software apps on several screens">
+</picture>
+</a>
+</div>
+<div class="article-homepage-featured__content">
+<h2 class="article-homepage-featured__title">
+<a href="/article/what-mandatory-sec-disclosure-would-mean-esg-software" hreflang="en">What mandatory SEC disclosure would mean for ESG software</a>
+</h2>
+<div class="article-homepage-featured__byline">by
+<a href="https://www.greenbiz.com//heather-clancy">Heather Clancy</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="layout__column layout__column--second">
+<div class="views-element-container block-homepage-dark">
+<h2 class="block-homepage-dark__title">News Feed</h2>
+<div><div class="js-view-dom-id-21855fa48e0e127a43befd80f5b0f51620a77500f82a0dcd13899efd32f42fb4">
+<div class="article-list-mini">
+<ul>
+<li>
+<article class="article-teaser-mini">
+<div class="article-teaser-mini__image">
+<a href="/article/new-tcfds-inside-quest-develop-global-nature-related-risk-framework-business">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/nature_Fahroni_sstock.jpg?itok=o5AR_bWf" alt="Could the world's first global treaty on reversing nature loss be on the horizon?" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-mini__content">
+<p class="article-teaser-mini__date">March 25, 2022</p>
+<h2 class="article-teaser-mini__title"><a href="/article/new-tcfds-inside-quest-develop-global-nature-related-risk-framework-business"><span>The new TCFDs? Inside the quest to develop a global nature-related risk framework for business</span>
+</a></h2>
+<p class="article-teaser-mini__byline">
+by <a href="/michael-holder" hreflang="en">Michael Holder</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="article-teaser-mini">
+<div class="article-teaser-mini__image">
+<a href="/article/3-ways-circular-economy-vital-energy-transition">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/circulareconomy_shutterstock_kate3155.png?itok=PSbC_asE" alt="circular economy concept" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-mini__content">
+<p class="article-teaser-mini__date">March 25, 2022</p>
+<h2 class="article-teaser-mini__title"><a href="/article/3-ways-circular-economy-vital-energy-transition"><span>3 ways the circular economy is vital for the energy transition</span>
+</a></h2>
+<p class="article-teaser-mini__byline">
+by <a href="/james-pennington" hreflang="en">James Pennington</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="article-teaser-mini">
+<div class="article-teaser-mini__image">
+<a href="/article/meet-company-building-europes-first-fossil-free-plastics-plant">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/PEF-2021-HR-12-Avantium-bottles-580x358.jpeg?itok=J49ODXNj" alt="bottles with alternative plastic" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-mini__content">
+<p class="article-teaser-mini__date">March 25, 2022</p>
+<h2 class="article-teaser-mini__title"><a href="/article/meet-company-building-europes-first-fossil-free-plastics-plant"><span>Meet the company building Europe's first fossil-free plastics plant</span>
+</a></h2>
+<p class="article-teaser-mini__byline">
+by <a href="/michael-holder" hreflang="en">Michael Holder</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="article-teaser-mini">
+<div class="article-teaser-mini__image">
+<a href="/article/corporations-see-bigger-risk-not-acting-climate">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/Climaterisk_sstock.jpg?itok=YlcHScGy" alt="climate risk" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-mini__content">
+<p class="article-teaser-mini__date">March 24, 2022</p>
+<h2 class="article-teaser-mini__title"><a href="/article/corporations-see-bigger-risk-not-acting-climate"><span>Climate risks are larger than clean energy transition anxieties</span>
+</a></h2>
+<p class="article-teaser-mini__byline">
+by <a href="/sarah-golden" hreflang="en">Sarah Golden</a>
+</p>
+</div>
+</article>
+</li>
+<li>
+<article class="article-teaser-mini">
+<div class="article-teaser-mini__image">
+<a href="/article/does-it-scale-wrong-question-food-production">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/Farming%20drawing.jpg?itok=fOUay2xJ" alt="Man farming" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-mini__content">
+<p class="article-teaser-mini__date">March 24, 2022</p>
+<h2 class="article-teaser-mini__title"><a href="/article/does-it-scale-wrong-question-food-production"><span>'Does it scale?' is the wrong question in food production</span>
+</a></h2>
+<p class="article-teaser-mini__byline">
+by <a href="/philip-loring" hreflang="en">Philip Loring</a>
+</p>
+</div>
+</article>
+</li>
+</ul>
+</div>
+<nav role="navigation" aria-labelledby="pagination-heading" class="pager-mini">
+<h4 id="pagination-heading" class="sr-only">Pagination</h4>
+<ul class="pager-mini__items js-pager__items">
+<li class="pager-mini__item pager-mini__item--next">
+<a href="/node/1?page=1" title="Go to next page" rel="next" class="pager-mini__button pager-mini__button--next">
+<span class="sr-only">Next page</span>
+<span aria-hidden="true">Next 5</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="layout layout--onecol layout--dark">
+<div class="layout__content">
+<div class="views-element-container block">
+<div>
+<div class="homepage-promoted-articles">
+<ul class="homepage-promoted-articles__list">
+<li><article class="article-teaser-homepage">
+<div class="article-teaser-homepage__image">
+<a href="/article/decarbonizing-steel-how-demand-greener-steel-will-upend-supply-chain">
+<div class="article__field-featured-image">
+<picture>
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_lg_1x/public/2022-03/steelproduction_shutterstock_timeline2photo.png?itok=4krA0uX5 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_lg_2x/public/2022-03/steelproduction_shutterstock_timeline2photo.png?itok=zS6DQRFi 2x" media="(min-width: 1200px)" type="image/png">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_md_1x/public/2022-03/steelproduction_shutterstock_timeline2photo.png?itok=YahhuPu- 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_md_2x/public/2022-03/steelproduction_shutterstock_timeline2photo.png?itok=jEwSWvb7 2x" media="(min-width: 992px) and (max-width: 1199px)" type="image/png">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_sm_1x/public/2022-03/steelproduction_shutterstock_timeline2photo.png?itok=1odjs-eB 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_sm_2x/public/2022-03/steelproduction_shutterstock_timeline2photo.png?itok=djZ9Eghf 2x" media="(min-width: 768px) and (max-width: 991px)" type="image/png">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xs_1x/public/2022-03/steelproduction_shutterstock_timeline2photo.png?itok=fgN23fEN 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xs_2x/public/2022-03/steelproduction_shutterstock_timeline2photo.png?itok=kryOOgpd 2x" media="(min-width: 576px) and (max-width: 767px)" type="image/png">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_1x/public/2022-03/steelproduction_shutterstock_timeline2photo.png?itok=1mbAaINR 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_2x/public/2022-03/steelproduction_shutterstock_timeline2photo.png?itok=SRUhvXo4 2x" media="(max-width: 575px)" type="image/png">
+<img src="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_1x/public/2022-03/steelproduction_shutterstock_timeline2photo.png?itok=1mbAaINR" alt="steel production">
+</picture>
+</div>
+</a>
+</div>
+<div class="article-teaser-homepage__content">
+<h2 class="article-teaser-homepage__title"><a href="/article/decarbonizing-steel-how-demand-greener-steel-will-upend-supply-chain"><span>Decarbonizing steel: How the demand for greener steel will upend the supply chain</span>
+</a></h2>
+<p class="article-teaser-homepage__byline">
+by <a href="/nils-naujok" hreflang="en">Nils Naujok</a> &amp; <a href="/holger-stamm" hreflang="en">Holger Stamm</a> &amp; <a href="/markus-knopf" hreflang="en">Markus Knopf</a>
+</p>
+</div>
+</article>
+</li>
+<li><article class="article-teaser-homepage">
+<div class="article-teaser-homepage__image">
+<a href="/article/kristina-wyatt-secs-proposed-climate-disclosure-rule">
+<div class="article__field-featured-image">
+<picture>
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_lg_1x/public/2022-03/sec.jpg?itok=MzCn_UBC 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_lg_2x/public/2022-03/sec.jpg?itok=O4b61auk 2x" media="(min-width: 1200px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_md_1x/public/2022-03/sec.jpg?itok=L-sbuo2i 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_md_2x/public/2022-03/sec.jpg?itok=-Yi2bED6 2x" media="(min-width: 992px) and (max-width: 1199px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_sm_1x/public/2022-03/sec.jpg?itok=d7iqjyZv 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_sm_2x/public/2022-03/sec.jpg?itok=qNkzS-oK 2x" media="(min-width: 768px) and (max-width: 991px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xs_1x/public/2022-03/sec.jpg?itok=QTWDTJso 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xs_2x/public/2022-03/sec.jpg?itok=iA04jnv1 2x" media="(min-width: 576px) and (max-width: 767px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_1x/public/2022-03/sec.jpg?itok=3i3y0he2 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_2x/public/2022-03/sec.jpg?itok=csZk2TQn 2x" media="(max-width: 575px)" type="image/jpeg">
+<img src="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_1x/public/2022-03/sec.jpg?itok=3i3y0he2" alt="SEC logo">
+</picture>
+</div>
+</a>
+</div>
+<div class="article-teaser-homepage__content">
+<h2 class="article-teaser-homepage__title"><a href="/article/kristina-wyatt-secs-proposed-climate-disclosure-rule"><span>Kristina Wyatt on the SEC’s proposed climate disclosure rule</span>
+</a></h2>
+<p class="article-teaser-homepage__byline">
+by <a href="/user/37150" hreflang="en">Grant Harrison</a>
+</p>
+</div>
+</article>
+</li>
+<li><article class="article-teaser-homepage">
+<div class="article-teaser-homepage__image">
+<a href="/article/looking-post-undergraduate-sustainability-education-pick-your-path">
+<div class="article__field-featured-image">
+<picture>
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_lg_1x/public/2022-03/gbg_editorial_hero_hire_learning_business_canvas_1470x894_0.png?itok=fN0c7Hdh 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_lg_2x/public/2022-03/gbg_editorial_hero_hire_learning_business_canvas_1470x894_0.png?itok=FoJTGFQ2 2x" media="(min-width: 1200px)" type="image/png">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_md_1x/public/2022-03/gbg_editorial_hero_hire_learning_business_canvas_1470x894_0.png?itok=Mwd3ZpQw 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_md_2x/public/2022-03/gbg_editorial_hero_hire_learning_business_canvas_1470x894_0.png?itok=v632pFDG 2x" media="(min-width: 992px) and (max-width: 1199px)" type="image/png">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_sm_1x/public/2022-03/gbg_editorial_hero_hire_learning_business_canvas_1470x894_0.png?itok=S_SyZX53 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_sm_2x/public/2022-03/gbg_editorial_hero_hire_learning_business_canvas_1470x894_0.png?itok=B7HkHZ8T 2x" media="(min-width: 768px) and (max-width: 991px)" type="image/png">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xs_1x/public/2022-03/gbg_editorial_hero_hire_learning_business_canvas_1470x894_0.png?itok=Bhapoana 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xs_2x/public/2022-03/gbg_editorial_hero_hire_learning_business_canvas_1470x894_0.png?itok=zqiDQ43K 2x" media="(min-width: 576px) and (max-width: 767px)" type="image/png">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_1x/public/2022-03/gbg_editorial_hero_hire_learning_business_canvas_1470x894_0.png?itok=yX5b3VaT 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_2x/public/2022-03/gbg_editorial_hero_hire_learning_business_canvas_1470x894_0.png?itok=N1Dcc9JF 2x" media="(max-width: 575px)" type="image/png">
+<img src="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_1x/public/2022-03/gbg_editorial_hero_hire_learning_business_canvas_1470x894_0.png?itok=yX5b3VaT" alt="A book, money and beaker">
+</picture>
+</div>
+</a>
+</div>
+<div class="article-teaser-homepage__content">
+<h2 class="article-teaser-homepage__title"><a href="/article/looking-post-undergraduate-sustainability-education-pick-your-path"><span>Looking for post-undergraduate sustainability education? Pick your path </span>
+</a></h2>
+<p class="article-teaser-homepage__byline">
+by <a href="/taylor-price" hreflang="en">Taylor Price</a>
+</p>
+</div>
+</article>
+</li>
+<li><article class="article-teaser-homepage">
+<div class="article-teaser-homepage__image">
+<a href="/article/silicon-valley-climate-innovations-need-focus-inclusion">
+<div class="article__field-featured-image">
+<picture>
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_lg_1x/public/2022-03/Together%20tech.jpg?itok=AkwB4Mss 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_lg_2x/public/2022-03/Together%20tech.jpg?itok=k2zwRi6j 2x" media="(min-width: 1200px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_md_1x/public/2022-03/Together%20tech.jpg?itok=uGUuJgzP 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_md_2x/public/2022-03/Together%20tech.jpg?itok=aGXDopJK 2x" media="(min-width: 992px) and (max-width: 1199px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_sm_1x/public/2022-03/Together%20tech.jpg?itok=pTntyy3i 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_sm_2x/public/2022-03/Together%20tech.jpg?itok=zGXKXcQZ 2x" media="(min-width: 768px) and (max-width: 991px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xs_1x/public/2022-03/Together%20tech.jpg?itok=memaigxg 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xs_2x/public/2022-03/Together%20tech.jpg?itok=PLRe5f7c 2x" media="(min-width: 576px) and (max-width: 767px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_1x/public/2022-03/Together%20tech.jpg?itok=zG3d0GRb 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_2x/public/2022-03/Together%20tech.jpg?itok=IldMxr_j 2x" media="(max-width: 575px)" type="image/jpeg">
+<img src="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_1x/public/2022-03/Together%20tech.jpg?itok=zG3d0GRb" alt="Hands holding gears together">
+</picture>
+</div>
+</a>
+</div>
+<div class="article-teaser-homepage__content">
+<h2 class="article-teaser-homepage__title"><a href="/article/silicon-valley-climate-innovations-need-focus-inclusion"><span>Silicon Valley climate innovations need to focus on inclusion</span>
+</a></h2>
+<p class="article-teaser-homepage__byline">
+by <a href="/jono-anzalone" hreflang="en">Jono Anzalone</a>
+</p>
+</div>
+</article>
+</li>
+<li><article class="article-teaser-homepage">
+<div class="article-teaser-homepage__image">
+<a href="/article/low-hanging-fruit-reducing-aircraft-fuel-consumption">
+<div class="article__field-featured-image">
+<picture>
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_lg_1x/public/2022-03/two-pilots-at-work_0.jpeg?itok=RFekHTvL 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_lg_2x/public/2022-03/two-pilots-at-work_0.jpeg?itok=m6BEtO1T 2x" media="(min-width: 1200px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_md_1x/public/2022-03/two-pilots-at-work_0.jpeg?itok=7FW2Ko9A 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_md_2x/public/2022-03/two-pilots-at-work_0.jpeg?itok=UM7-HJm_ 2x" media="(min-width: 992px) and (max-width: 1199px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_sm_1x/public/2022-03/two-pilots-at-work_0.jpeg?itok=LvGsi6FG 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_sm_2x/public/2022-03/two-pilots-at-work_0.jpeg?itok=UOPtGVbU 2x" media="(min-width: 768px) and (max-width: 991px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xs_1x/public/2022-03/two-pilots-at-work_0.jpeg?itok=_abLA2Pa 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xs_2x/public/2022-03/two-pilots-at-work_0.jpeg?itok=71vWRhii 2x" media="(min-width: 576px) and (max-width: 767px)" type="image/jpeg">
+<source srcset="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_1x/public/2022-03/two-pilots-at-work_0.jpeg?itok=NivATIr2 1x, /sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_2x/public/2022-03/two-pilots-at-work_0.jpeg?itok=nxrgH5fc 2x" media="(max-width: 575px)" type="image/jpeg">
+<img src="/sites/default/files/styles/kalapicture_12_breakpoints_kalapicture_screen_xxs_1x/public/2022-03/two-pilots-at-work_0.jpeg?itok=NivATIr2" alt="Two pilots in a cockpit">
+</picture>
+</div>
+</a>
+</div>
+<div class="article-teaser-homepage__content">
+<h2 class="article-teaser-homepage__title"><a href="/article/low-hanging-fruit-reducing-aircraft-fuel-consumption"><span>The low-hanging fruit of reducing aircraft fuel consumption? </span>
+</a></h2>
+<p class="article-teaser-homepage__byline">
+by <a href="/liz-morrison" hreflang="en">Liz Morrison</a>
+</p>
+</div>
+</article>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="layout layout--onecol">
+<div class="layout__content">
+<div class="block">
+<div class="ad-wrapper banner-ad-wrapper">
+
+<div id="div-gpt-ad-1602710170057-0" style="width: 728px; height: 90px;" data-google-query-id="CM3r4-_v4PYCFUP09QIdUYkDPQ">
+
+<div id="google_ads_iframe_/4797590/GBZ_D8_Leaderboard_2_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/4797590/GBZ_D8_Leaderboard_2_0" name="google_ads_iframe_/4797590/GBZ_D8_Leaderboard_2_0" title="3rd party ad content" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom;" role="region" aria-label="Advertisement" tabindex="0" srcdoc="" data-google-container-id="2" data-load-complete="true" width="728" height="90" frameborder="0"></iframe></div></div>
+</div>
+</div>
+<div class="block--specialreports">
+<h2>New White Papers &amp; Research</h2>
+<div class="special-reports__field-special-report-items">
+<div class="field__item"> <div class="paragraph paragraph--type--image-link paragraph--view-mode--default">
+
+<a href="https://www.greenbiz.com/whitepaper/benefits-getting-your-esg-due-diligence-right">
+<h3></h3>
+<div class="image-link__field-image-media"><figure>
+<img src="/sites/default/files/styles/report_cover_image_big_706x430/public/2022-03/greenbiz-goby-featured-report-cover-image.png?itok=FXg6vpVF" alt="goby_3/2/22_white_paper_cover_image" loading="lazy" width="706" height="430">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+</div>
+<div class="field__item"> <div class="paragraph paragraph--type--image-link paragraph--view-mode--default">
+
+<a href="https://www.greenbiz.com/whitepaper/how-waste-metering-powers-environmental-and-financial-responsibility">
+<h3></h3>
+<div class="image-link__field-image-media"><figure>
+<img src="/sites/default/files/styles/report_cover_image_big_706x430/public/2022-03/Cover-Image_EBook_4.jpeg?itok=5KgKk8YK" alt="compology_2/28/22_white_paper_cover_image" loading="lazy" width="706" height="430">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+</div>
+<div class="field__item"> <div class="paragraph paragraph--type--image-link paragraph--view-mode--default">
+
+<a href="https://www.greenbiz.com/whitepaper/energy-market-outlook-what-expect-2022-and-beyond">
+<h3></h3>
+<div class="image-link__field-image-media"><figure>
+<img src="/sites/default/files/styles/report_cover_image_big_706x430/public/2022-02/Screen%20Shot%202022-02-07%20at%209.20.14%20AM.png?itok=wGdSBvwK" alt="enel_x_2/3/22_white_paper_cover_image" loading="lazy" width="706" height="430">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+ </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="layout layout--onecol">
+<div class="layout__content">
+<div class="article-list">
+<h2 class="article-list__title">Strategy, Green Finance &amp; ESG</h2>
+<div>
+<div class="owl-carousel owl-loaded owl-drag">
+
+
+
+
+
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1257px;"><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/tapping-power-effective-esg-storytelling">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/Storytelling.jpg?itok=cFvstRPK" alt="Puppet show storytelling" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/tapping-power-effective-esg-storytelling"><span>Tapping into the power of effective ESG storytelling</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/kristina-wyatt-secs-proposed-climate-disclosure-rule">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/sec.jpg?itok=q7ZARLSA" alt="SEC logo" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/kristina-wyatt-secs-proposed-climate-disclosure-rule"><span>Kristina Wyatt on the SEC’s proposed climate disclosure rule</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/going-public-boards-should-take-lead-esg-planning">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/planning_sstock.jpg?itok=rvwETWdy" alt="Planning" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/going-public-boards-should-take-lead-esg-planning"><span>Going public: Boards should take the lead in ESG planning</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/looking-post-undergraduate-sustainability-education-pick-your-path">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/gbg_editorial_hero_hire_learning_business_canvas_1470x894_0.png?itok=GJV03mUc" alt="A book, money and beaker" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/looking-post-undergraduate-sustainability-education-pick-your-path"><span>Looking for post-undergraduate sustainability education? Pick your path </span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/ocean-management-not-yet-sustainable-these-4-key-tactics-could-change">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/sustainableoceans_shutterstock.png?itok=IH-l_mKI" alt="dark and polluted ocean next to clear open ocean" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/ocean-management-not-yet-sustainable-these-4-key-tactics-could-change"><span>Ocean management is not yet sustainable — these 4 key tactics could change that</span>
+</a></h2>
+</div>
+</article></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+</div>
+<div class="article-list__cta">
+<a class="button   button-topics" href="/collections/strategy-finance-esg-issues">
+<span class="button-topics__mobile">See All</span>
+<span class="button-topics__desktop">See All in <span class="button-topics__topic"> Strategy, Finance &amp; ESG Issues</span>
+</span>
+</a>
+</div>
+</div>
+<div class="article-list">
+<h2 class="article-list__title">Climate Tech</h2>
+<div>
+<div class="owl-carousel owl-loaded owl-drag">
+
+
+
+
+
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1257px;"><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/silicon-valley-climate-innovations-need-focus-inclusion">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/Together%20tech.jpg?itok=bluGbYox" alt="Hands holding gears together" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/silicon-valley-climate-innovations-need-focus-inclusion"><span>Silicon Valley climate innovations need to focus on inclusion</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/episode-308-lanzatech-ceo-reflects-sxsw-startup-scene">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2021-01/cms_podcast_image_47_2.png?itok=4DZTWR3J" alt="podcast" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+<p class="article-teaser-vertical__indicator">Podcast</p>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/episode-308-lanzatech-ceo-reflects-sxsw-startup-scene"><span>Episode 308: LanzaTech CEO reflects, SXSW startup scene</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/jennifer-holmgren-alternative-fuels-pioneer-carbon-recycling-queen">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/JenniferHolmgrenLanzaTechQ%26A1.png?itok=fgXBp2-c" alt="Jennifer Holmgren with brown and person art on either side" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/jennifer-holmgren-alternative-fuels-pioneer-carbon-recycling-queen"><span>Jennifer Holmgren: from alternative fuels pioneer to carbon recycling queen</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/indoor-ag-and-alternative-protein-win-big-food-waste-and-ag-tech-diversify">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/Flashfood.jpeg?itok=6NDfnN-7" alt="Flashfood" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/indoor-ag-and-alternative-protein-win-big-food-waste-and-ag-tech-diversify"><span>Indoor ag and alternative protein win big, food waste and ag-tech diversify</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/every-vc-needs-education-esg">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/startup_ESG_sstock.jpg?itok=Umr-I8JC" alt="Startup team brainstorming ideas" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/every-vc-needs-education-esg"><span>Every VC needs an education in ESG</span>
+</a></h2>
+</div>
+</article></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+</div>
+<div class="article-list__cta">
+<a class="button   button-topics" href="/collections/climate-tech">
+<span class="button-topics__mobile">See All</span>
+<span class="button-topics__desktop">See All in <span class="button-topics__topic"> Climate Tech</span>
+</span>
+</a>
+</div>
+</div>
+<div class="article-list">
+<h2 class="article-list__title">Circularity</h2>
+<div>
+<div class="owl-carousel owl-loaded owl-drag">
+
+
+
+
+
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1257px;"><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/3-ways-circular-economy-vital-energy-transition">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/circulareconomy_shutterstock_kate3155.png?itok=PSbC_asE" alt="circular economy concept" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/3-ways-circular-economy-vital-energy-transition"><span>3 ways the circular economy is vital for the energy transition</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/meet-company-building-europes-first-fossil-free-plastics-plant">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/PEF-2021-HR-12-Avantium-bottles-580x358.jpeg?itok=J49ODXNj" alt="bottles with alternative plastic" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/meet-company-building-europes-first-fossil-free-plastics-plant"><span>Meet the company building Europe's first fossil-free plastics plant</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/missing-45-role-circularity-within-climate-disclosure">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/scrutiny_sstock.jpg?itok=uZCVWS8P" alt="Magnifying glass being used to scrutinize data" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/missing-45-role-circularity-within-climate-disclosure"><span>The missing 45%: The role of circularity within climate disclosure</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/pipe-dream-sustainable-plastics">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/plastics_shutterstock_Roman023_photography.png?itok=tS0sxb4v" alt="Package of thermal insulation material, rock wool is wrapped in foil." loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/pipe-dream-sustainable-plastics"><span>The pipe dream of sustainable plastics</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/5-key-learnings-closed-loop-partners-reusable-packaging-pilots">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/singleusemultiusebags_shutterstock_KryvenokAnastasiia.jpeg?itok=N-49oiBj" alt="Person holds plastic bag in one hand and a reusable fabric bag in the other." loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/5-key-learnings-closed-loop-partners-reusable-packaging-pilots"><span>5 key learnings from Closed Loop Partners' reusable packaging pilots</span>
+</a></h2>
+</div>
+</article></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+</div>
+<div class="article-list__cta">
+<a class="button   button-topics" href="/collections/circular-economy">
+<span class="button-topics__mobile">See All</span>
+<span class="button-topics__desktop">See All in <span class="button-topics__topic"> Circular Economy</span>
+</span>
+</a>
+</div>
+</div>
+<div class="article-list">
+<h2 class="article-list__title">Energy &amp; Climate</h2>
+<div>
+<div class="owl-carousel owl-loaded owl-drag">
+
+
+
+
+
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1257px;"><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/3-ways-circular-economy-vital-energy-transition">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/circulareconomy_shutterstock_kate3155.png?itok=PSbC_asE" alt="circular economy concept" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/3-ways-circular-economy-vital-energy-transition"><span>3 ways the circular economy is vital for the energy transition</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/corporations-see-bigger-risk-not-acting-climate">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/Climaterisk_sstock.jpg?itok=YlcHScGy" alt="climate risk" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/corporations-see-bigger-risk-not-acting-climate"><span>Climate risks are larger than clean energy transition anxieties</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/renewable-energy-shouldnt-be-blamed-spiking-energy-prices-its-solution">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/renewableenergy_shutterstock.png?itok=V0Kpt5uR" alt="renewable energy concept" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/renewable-energy-shouldnt-be-blamed-spiking-energy-prices-its-solution"><span>Renewable energy shouldn’t be blamed for spiking energy prices — it's the solution</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/decarbonizing-steel-how-demand-greener-steel-will-upend-supply-chain">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/steelproduction_shutterstock_timeline2photo.png?itok=sZKOllVz" alt="steel production" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/decarbonizing-steel-how-demand-greener-steel-will-upend-supply-chain"><span>Decarbonizing steel: How the demand for greener steel will upend the supply chain</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/silicon-valley-climate-innovations-need-focus-inclusion">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/Together%20tech.jpg?itok=bluGbYox" alt="Hands holding gears together" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/silicon-valley-climate-innovations-need-focus-inclusion"><span>Silicon Valley climate innovations need to focus on inclusion</span>
+</a></h2>
+</div>
+</article></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+</div>
+<div class="article-list__cta">
+<a class="button   button-topics" href="/collections/energy-climate">
+<span class="button-topics__mobile">See All</span>
+<span class="button-topics__desktop">See All in <span class="button-topics__topic"> Energy &amp; Climate</span>
+</span>
+</a>
+</div>
+</div>
+<div class="article-list">
+<h2 class="article-list__title">Transportation &amp; Mobility</h2>
+<div>
+<div class="owl-carousel owl-loaded owl-drag">
+
+
+
+
+
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1257px;"><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/low-hanging-fruit-reducing-aircraft-fuel-consumption">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/two-pilots-at-work_0.jpeg?itok=uel2JbSb" alt="Two pilots in a cockpit" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/low-hanging-fruit-reducing-aircraft-fuel-consumption"><span>The low-hanging fruit of reducing aircraft fuel consumption? </span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/ev-transition-requires-infrastructure-powers-all-communities">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/evinfrastructure_shutterstock_Ena%20in%20RSA.png?itok=jxPxYasM" alt="Two modern electric cars recharging their batteries while parked at a charging station along a busy street in London, thus decreasing pollution and climate change" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/ev-transition-requires-infrastructure-powers-all-communities"><span>The EV transition requires infrastructure that powers all communities</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/episode-308-lanzatech-ceo-reflects-sxsw-startup-scene">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2021-01/cms_podcast_image_47_2.png?itok=4DZTWR3J" alt="podcast" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+<p class="article-teaser-vertical__indicator">Podcast</p>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/episode-308-lanzatech-ceo-reflects-sxsw-startup-scene"><span>Episode 308: LanzaTech CEO reflects, SXSW startup scene</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/next-tool-climate-toolbox-your-parked-ev">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/Fermata%20Energy%201%20-2.jpg?itok=0W8PW8rr" alt="John Wheeler, CFO of Fermata Energy, pictured near the company's technology in Brooklyn, New York" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/next-tool-climate-toolbox-your-parked-ev"><span>The next tool in the climate toolbox: Your parked EV</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/3-ways-reimagine-public-transport-people-and-climate">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/publictransit_shutterstock_santypan.png?itok=2S8l_IGN" alt="3 people in front of a subway going by" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/3-ways-reimagine-public-transport-people-and-climate"><span>3 ways to reimagine public transport for people and the climate</span>
+</a></h2>
+</div>
+</article></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+</div>
+<div class="article-list__cta">
+<a class="button   button-topics" href="/collections/transportation-mobility">
+<span class="button-topics__mobile">See All</span>
+<span class="button-topics__desktop">See All in <span class="button-topics__topic"> Transportation &amp; Mobility</span>
+</span>
+</a>
+</div>
+</div>
+<div class="article-list">
+<h2 class="article-list__title">Food Systems</h2>
+<div>
+<div class="owl-carousel owl-loaded owl-drag">
+
+
+
+
+
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1257px;"><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/does-it-scale-wrong-question-food-production">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/Farming%20drawing.jpg?itok=fOUay2xJ" alt="Man farming" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/does-it-scale-wrong-question-food-production"><span>'Does it scale?' is the wrong question in food production</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/q1-roundup-major-food-players-alt-protein-takes-deforestation-moves-dont">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/Mc%20Plant.jpg?itok=L2-EADb6" alt="Mc plant" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/q1-roundup-major-food-players-alt-protein-takes-deforestation-moves-dont"><span>Q1 roundup of major food players: Alt protein takes off; deforestation moves don’t</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/building-resiliency-worlds-water-crisis-through-collective-action">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/image_6483441.png?itok=tkpR2PQt" alt="keurigdrpepper_3/22/22_article_featured_image" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+<p class="article-teaser-vertical__indicator">Sponsored</p>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/building-resiliency-worlds-water-crisis-through-collective-action"><span>Building resiliency to the world’s water crisis through collective action</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/indoor-ag-and-alternative-protein-win-big-food-waste-and-ag-tech-diversify">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/Flashfood.jpeg?itok=6NDfnN-7" alt="Flashfood" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/indoor-ag-and-alternative-protein-win-big-food-waste-and-ag-tech-diversify"><span>Indoor ag and alternative protein win big, food waste and ag-tech diversify</span>
+</a></h2>
+</div>
+</article></div><div class="owl-item active" style="width: 231.4px; margin-right: 20px;"><article class="article-teaser-vertical">
+<div class="article-teaser-vertical__image">
+<a href="/article/tackle-water-risk-agribusinesses-need-look-their-supply-chains">
+<div class="article__field-featured-image"><figure>
+<img src="/sites/default/files/styles/teaser_vertical/public/2022-03/cargill-water-supply-chains.jpg?itok=89HCUKX6" alt="Watering farm" loading="lazy" width="676" height="410">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="article-teaser-vertical__content">
+<h2 class="article-teaser-vertical__title"><a href="/article/tackle-water-risk-agribusinesses-need-look-their-supply-chains"><span>To tackle water risk, agribusinesses need to look to their supply chains</span>
+</a></h2>
+</div>
+</article></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+</div>
+<div class="article-list__cta">
+<a class="button   button-topics" href="/collections/food-systems">
+<span class="button-topics__mobile">See All</span>
+<span class="button-topics__desktop">See All in <span class="button-topics__topic"> Food Systems</span>
+</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="layout layout--onecol">
+<div class="layout__content">
+<div class="block">
+<div class="ad-wrapper banner-ad-wrapper">
+
+<div id="div-gpt-ad-1588266779993-0" style="width: 728px; height: 90px;" data-google-query-id="CMnr4-_v4PYCFUP09QIdUYkDPQ">
+
+<div id="google_ads_iframe_/4797590/GBZ_D8_Leaderboard_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/4797590/GBZ_D8_Leaderboard_0" name="google_ads_iframe_/4797590/GBZ_D8_Leaderboard_0" title="3rd party ad content" scrolling="no" marginwidth="0" marginheight="0" style="border: 0px none; vertical-align: bottom;" role="region" aria-label="Advertisement" tabindex="0" srcdoc="" data-google-container-id="1" data-load-complete="true" width="728" height="90" frameborder="0"></iframe></div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="layout layout--onecol">
+<div class="layout__region layout__region--content">
+<div class="views-element-container webcast-list webcast-list--upcoming">
+<h2 class="webcast-list__title">Upcoming Webcasts</h2>
+<div><div class="js-view-dom-id-25600d02488b60d15b106e90fdbedc009975c2238d69701c694e039f427f7936">
+<ul class="webcast-list__items grid-3-col">
+<li>
+<article class="webcast-teaser" style="background-image: url(/sites/default/files/2022-02/gbg_webcast_nutrien_03292022-05%20copy.png)">
+<div class="webcast-teaser__content">
+<div class="webcast-teaser__logo">
+<img src="/sites/default/files/2022-02/Nutrien_Logo_R_White_CMYK.png" alt="nutrien_white_logo" loading="lazy" width="420" height="100">
+</div>
+<h3 class="webcast-teaser__title"><span>Beyond the Workforce: Threading DEI into Supply Chains, Communities &amp; Capital Investments</span>
+</h3>
+<p class="webcast-teaser__date">March 29, 2022</p>
+</div>
+<a class="webcast-teaser__link" href="/webcast/beyond-workforce-threading-dei-supply-chains-communities-capital-investments">
+Register
+</a>
+</article>
+</li>
+<li>
+<article class="webcast-teaser" style="background-image: url(/sites/default/files/2022-03/gbg_webcast_mohawk_03312022%20copy.jpg)">
+<div class="webcast-teaser__content">
+<div class="webcast-teaser__logo">
+<img src="/sites/default/files/2022-03/2017_Mohawk_Group_Logotype_reversed_0.png" alt="mohawk_white_logo" loading="lazy" width="387" height="100">
+</div>
+<h3 class="webcast-teaser__title"><span>Scrap Culture: Sustainable Design Practices in a World of Waste</span>
+</h3>
+<p class="webcast-teaser__date">March 31, 2022</p>
+</div>
+<a class="webcast-teaser__link" href="/webcast/scrap-culture-sustainable-design-practices-world-waste">
+Register
+</a>
+</article>
+</li>
+<li>
+<article class="webcast-teaser" style="background-image: url(/sites/default/files/2022-03/gbg_webcast_navexglobal_04052022-05%20copy.png)">
+<div class="webcast-teaser__content">
+<div class="webcast-teaser__logo">
+<img src="/sites/default/files/2022-03/NAVEX_Logo_White-CMYK_0.png" alt="navex_global_white_logo" loading="lazy" width="350" height="100">
+</div>
+<h3 class="webcast-teaser__title"><span>How to Embed Risk and Ethics into Your ESG Strategy</span>
+</h3>
+<p class="webcast-teaser__date">April 05, 2022</p>
+</div>
+<a class="webcast-teaser__link" href="/webcast/how-embed-risk-and-ethics-your-esg-strategy">
+Register
+</a>
+</article>
+</li>
+<li>
+<article class="webcast-teaser" style="background-image: url(/sites/default/files/2022-03/gbg_webcast_pachama_04122022_BG%20copy.png)">
+<div class="webcast-teaser__content">
+<div class="webcast-teaser__logo">
+<img src="/sites/default/files/2022-03/Pachama-Logo-White.png" alt="pachama_white_logo" loading="lazy" width="371" height="100">
+</div>
+<h3 class="webcast-teaser__title"><span>How Technology is Transforming Carbon Markets</span>
+</h3>
+<p class="webcast-teaser__date">April 12, 2022</p>
+</div>
+<a class="webcast-teaser__link" href="/webcast/how-technology-transforming-carbon-markets">
+Register
+</a>
+</article>
+</li>
+<li>
+<article class="webcast-teaser" style="background-image: url(/sites/default/files/2022-03/gbg_webcast_Ocean_Conservancy_BumbleBee_04192022_1920x1080.png)">
+<div class="webcast-teaser__content">
+<div class="webcast-teaser__logo">
+<img src="/sites/default/files/2022-03/OC_Logo_Horiz_White_1.png" alt="Ocean_Conservancy_white_logoV2" loading="lazy" width="501" height="128">
+</div>
+<h3 class="webcast-teaser__title"><span>Preserving the Value of Our Ocean by Preventing Plastic Waste</span>
+</h3>
+<p class="webcast-teaser__date">April 19, 2022</p>
+</div>
+<a class="webcast-teaser__link" href="/webcast/preserving-value-our-ocean-preventing-plastic-waste">
+Register
+</a>
+</article>
+</li>
+<li>
+<article class="webcast-teaser" style="background-image: url(/sites/default/files/2022-03/gbg_webcast_ncx_04212022-05%20copy.png)">
+<div class="webcast-teaser__content">
+<div class="webcast-teaser__logo">
+<img src="/sites/default/files/2022-03/NCX_white_logo.png" alt="ncx_white_logo" loading="lazy" width="300" height="292">
+</div>
+<h3 class="webcast-teaser__title"><span>Driving Impact with Forest Carbon Markets</span>
+</h3>
+<p class="webcast-teaser__date">April 21, 2022</p>
+</div>
+<a class="webcast-teaser__link" href="/webcast/driving-impact-forest-carbon-markets">
+Register
+</a>
+</article>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="contributors-gbz4">
+<h2 class="contributors-gbz4__title">Featured Contributors</h2>
+<div class="owl-carousel owl-loaded owl-drag">
+
+
+
+
+
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1255px;"><div class="owl-item active" style="width: 231px; margin-right: 20px;"><article class="contributor">
+<div class="contributor__picture">
+<a href="/joel-makower">
+<img src="/sites/default/files/styles/contributor_avatar_round/public/images/users/JMakower_web.jpg?itok=4017USPb" alt="image" loading="lazy" width="180" height="180">
+</a>
+</div>
+<div class="contributor__content">
+<h3 class="contributor__name"><a href="/joel-makower">Joel Makower</a></h3>
+<div class="contributor__subtitle">Chairman &amp; Co-founder</div>
+<div class="contributor__affiliation">GreenBiz Group</div>
+<div class="contributor__twitter"><a href="https://twitter.com/makower">@makower</a></div>
+</div>
+</article></div><div class="owl-item active" style="width: 231px; margin-right: 20px;"><article class="contributor">
+<div class="contributor__picture">
+<a href="/heather-clancy">
+<div class="user__field-profile-image"><figure>
+<img src="/sites/default/files/styles/contributor_avatar_round/public/2022-03/LB_R3_GB22-D1-1939_0.jpg?itok=y5O2uocl" alt="Heather Clancy, GB 22" loading="lazy" width="180" height="180">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="contributor__content">
+<h3 class="contributor__name"><a href="/heather-clancy">Heather Clancy</a></h3>
+<div class="contributor__subtitle">VP, Editorial Director</div>
+<div class="contributor__affiliation">GreenBiz Group</div>
+<div class="contributor__twitter"><a href="https://twitter.com/GreenTechLady">@GreenTechLady</a></div>
+</div>
+</article></div><div class="owl-item active" style="width: 231px; margin-right: 20px;"><article class="contributor">
+<div class="contributor__picture">
+<a href="/deonna-anderson">
+<div class="user__field-profile-image"><figure>
+<img src="/sites/default/files/styles/contributor_avatar_round/public/2022-03/Deonna_Anderson_headshot.jpg?itok=69fFtBNt" alt="Deonna Anderson" loading="lazy" width="180" height="180">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="contributor__content">
+<h3 class="contributor__name"><a href="/deonna-anderson">Deonna Anderson</a></h3>
+<div class="contributor__subtitle">Senior Editor</div>
+<div class="contributor__affiliation">GreenBiz Group</div>
+<div class="contributor__twitter"><a href="https://twitter.com/iamDEONNA">@iamDEONNA</a></div>
+</div>
+</article></div><div class="owl-item active" style="width: 231px; margin-right: 20px;"><article class="contributor">
+<div class="contributor__picture">
+<a href="/jesse-klein">
+<div class="user__field-profile-image"><figure>
+<img src="/sites/default/files/styles/contributor_avatar_round/public/2022-03/Jesse_Klein_headshot.jpg?itok=QV2166vs" alt="Jesse Klein" loading="lazy" width="180" height="180">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="contributor__content">
+<h3 class="contributor__name"><a href="/jesse-klein">Jesse Klein</a></h3>
+<div class="contributor__subtitle">Associate Editor</div>
+<div class="contributor__affiliation">GreenBiz Group</div>
+</div>
+</article></div><div class="owl-item active" style="width: 231px; margin-right: 20px;"><article class="contributor">
+<div class="contributor__picture">
+<a href="/cj-clouse">
+<div class="user__field-profile-image"><figure>
+<img src="/sites/default/files/styles/contributor_avatar_round/public/2021-10/CJClouse.jpg?itok=zBPqy8Gk" alt="CJ Clouse" loading="lazy" width="180" height="180">
+<div class="media-credit-wrapper">
+</div>
+</figure>
+</div>
+</a>
+</div>
+<div class="contributor__content">
+<h3 class="contributor__name"><a href="/cj-clouse">CJ Clouse</a></h3>
+<div class="contributor__subtitle">Senior Writer</div>
+<div class="contributor__affiliation">GreenBiz.com</div>
+<div class="contributor__twitter"><a href="https://twitter.com/cjclouse2021">@cjclouse2021</a></div>
+</div>
+</article></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></div>
+<div class="contributors-gbz4__cta">
+<a class="button   button-topics" href="/editorial-team">
+<span class="button-topics__mobile">See All</span>
+<span class="button-topics__desktop">See More Contributors </span>
+</a>
+</div>
+</div>
+<div class="subscribe-block-container">
+<div class="subscribe-block">
+<p class="subscribe-block__copy">Free Newsletters</p>
+<a href="/newsletters-subscribe" class="button button--subscribe">Subscribe</a>
+<button type="button" class="subscribe-block__close" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</main>
+<footer class="site-footer">
+<div class="site-footer--primary py-3">
+<div class="container d-sm-flex flex-wrap">
+<nav id="footer" class="footer-menu">
+<ul class="nav flex-column">
+<li class="nav-item">
+<a href="https://www.greenbiz.com/about-us" title="About GreenBiz Group" class="nav-link">About Us</a>
+</li>
+<li class="nav-item">
+<a href="https://www.greenbiz.com/media-kit" class="nav-link">Media Kit</a>
+</li>
+<li class="nav-item">
+<a href="https://www.greenbiz.com/editorial-team" class="nav-link">Editorial Team</a>
+</li>
+<li class="nav-item">
+<a href="https://www.greenbiz.com/our-team" title="This is a footer link." class="nav-link">GreenBiz Team</a>
+</li>
+<li class="nav-item">
+<a href="https://www.greenbiz.com/contact-us" class="nav-link">Contact Us</a>
+</li>
+</ul>
+</nav>
+<nav id="footer-menu-2" class="footer-menu">
+<ul class="nav flex-column">
+<li class="nav-item">
+ <a href="https://www.greenbiz.com/executive-network" class="nav-link">Executive Network</a>
+</li>
+<li class="nav-item">
+<a href="https://www.greenbiz.com/newsletters-subscribe" class="nav-link">Newsletters</a>
+</li>
+<li class="nav-item">
+<a href="https://www.greenbiz.com/webcasts" class="nav-link">Webcasts</a>
+</li>
+<li class="nav-item">
+<a href="https://www.greenbiz.com/research" class="nav-link">White Papers and Research</a>
+</li>
+</ul>
+</nav>
+<nav id="footer-menu-3" class="footer-menu">
+<ul class="nav flex-column">
+<li class="nav-item">
+<a href="https://www.greenbiz.com/leadership-development" class="nav-link">Leadership Development</a>
+</li>
+<li class="nav-item">
+<a href="https://www.greenbiz.com/greenbiz-careers" class="nav-link">Careers @ GreenBiz</a>
+</li>
+<li class="nav-item">
+<a href="https://www.greenbiz.com/greenbiz-editorial-guidelines" class="nav-link">Editorial Guidelines</a>
+</li>
+<li class="nav-item">
+<a href="https://www.greenbiz.com/blogs/enterprise/greenbiz-350-podcast" class="nav-link">GreenBiz 350 Podcast</a>
+</li>
+<li class="nav-item">
+<a href="https://www.greenbiz.com/support" class="nav-link">Support</a>
+</li>
+</ul>
+</nav>
+<nav id="footer-social-menu" class="footer-social-menu">
+<ul class="social-menu__items nav justify-content-around justify-content-lg-start">
+<li class="nav-item">
+<a href="https://twitter.com/greenbiz" class="nav-link" aria-label="Twitter">
+<i class="fab fa-twitter" aria-hidden="true"></i>
+<span class="sr-only">Twitter</span>
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.facebook.com/GreenBiz" class="nav-link" aria-label="Facebook">
+<i class="fab fa-facebook-f" aria-hidden="true"></i>
+<span class="sr-only">Facebook</span>
+</a>
+</li>
+<li class="nav-item">
+<a href="https://www.linkedin.com/company/greenbiz-group" class="nav-link" aria-label="Linkedin">
+<i class="fab fa-linkedin-in" aria-hidden="true"></i>
+<span class="sr-only">Linkedin</span>
+</a>
+</li>
+<li class="nav-item">
+<a href="/rss.xml" class="nav-link" aria-label="This site (RSS)">
+<i class="fas fa-rss" aria-hidden="true"></i>
+<span class="sr-only">This site (RSS)</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="site-footer--secondary py-3">
+<div class="container">
+<div class="row">
+<div class="col-lg-7">
+<nav id="footer-secondary-links" class="footer-secondary-links">
+<ul class="nav">
+<li class="" nav-item="">
+<a href="https://www.greenbiz.com/privacy-policy" class="nav-link">Privacy Policy</a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="col-lg-5">
+<div class="site-footer--message">
+© 2022 GreenBiz Group Inc. GREENBIZ® and GREENBIZ.COM® are registered trademarks of
+<a href="http://www.greenbizgroup.com/" target="_blank">GreenBiz Group Inc</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1902082430030114");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1902082430030114&amp;ev=PageView&amp;noscript=1"></noscript>
+
+<script type="text/javascript" id="">ga("require","linker");var destinationLink=document.getElementById("destination-link");destinationLink.addEventListener("click",function(){ga("linker: decorate",destinationLink)});</script>
+<script type="text/javascript" id="">MktoForms2.whenReady(function(a){a.onSubmit(function(){a.vals();dataLayer.push({event:"marketoFormSubmit"})})});</script>
+<script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/1","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"better_exposed_filters\/general,core\/picturefill,datalayer\/behaviors,gbz4_radix\/style,gbz4_share_this\/gbz4_share_this,layout_discovery\/onecol,moderated_content_bulk_publish\/moderated-content-bulk-publish,paragraphs\/drupal.paragraphs.unpublished,radix\/bootstrap,radix\/navbar,radix\/style,search_api_autocomplete\/search_api_autocomplete,system\/base,views\/views.ajax,views\/views.module","theme":"gbz4_radix","theme_token":null},"ajaxTrustedUrl":{"\/search":true},"dataLayer":{"defaultLang":"en","languages":{"en":{"id":"en","name":"English","direction":"ltr","weight":0}}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:21855fa48e0e127a43befd80f5b0f51620a77500f82a0dcd13899efd32f42fb4":{"view_name":"articles","view_display_id":"list_mini","view_args":"","view_path":"\/node\/1","view_base_path":null,"view_dom_id":"21855fa48e0e127a43befd80f5b0f51620a77500f82a0dcd13899efd32f42fb4","pager_element":0}}},"search_api_autocomplete":{"search":{"delay":100,"auto_submit":true,"min_length":3}},"user":{"uid":0,"permissionsHash":"231834b2bb428946b645f09eddb695b0cfc0b25583f708922918861a42dce1e9"}}</script>
+<script src="/sites/default/files/js/js_yn7kZ8P1Zs3qIxuzbGY2ODgfsQETawqt3G6zwjd97Tw.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"NRJS-302460acab5299c10b7","applicationID":"604633541","transactionName":"MVVTbUEHWUpUAhcPWQgfcFpHD1hXGhECAVM5U1BaWwM=","queueTime":0,"applicationTime":21,"atts":"HRJQGwkdSkQ=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
+
+<ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front search-api-autocomplete-search" style="display: none;"></ul><div role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><script type="text/javascript" id="">/*
+ @preserve
+ jquery.scrolldepth.js | v1.0
+ Copyright (c) 2016 Rob Flaherty (@robflaherty)
+ Licensed under the MIT and GPL licenses.
+*/
+!function(c){"function"==typeof define&&define.amd?define(["jquery"],c):"object"==typeof module&&module.exports?module.exports=c(require("jquery")):c(jQuery)}(function(c){var n,t,k,h,v={minHeight:0,elements:[],percentage:!0,userTiming:!0,pixelDepth:!0,nonInteraction:!0,gaGlobal:!1,gtmOverride:!1,trackerName:!1,dataLayer:"dataLayer"},m=c(window),g=[],p=!1,f=0;return c.scrollDepth=function(a){function u(b,c,d,q){var l=a.trackerName?a.trackerName+".send":"send";h?(h({event:"ScrollDistance",eventCategory:"Scroll Depth",
+eventAction:b,eventLabel:c,eventValue:1,eventNonInteraction:a.nonInteraction}),a.pixelDepth&&2<arguments.length&&d>f&&(f=d,h({event:"ScrollDistance",eventCategory:"Scroll Depth",eventAction:"Pixel Depth",eventLabel:(250*Math.floor(d/250)).toString(),eventValue:1,eventNonInteraction:a.nonInteraction})),a.userTiming&&3<arguments.length&&h({event:"ScrollTiming",eventCategory:"Scroll Depth",eventAction:b,eventLabel:c,eventTiming:q})):(n&&(window[k](l,"event","Scroll Depth",b,c,1,{nonInteraction:a.nonInteraction}),
+a.pixelDepth&&2<arguments.length&&d>f&&(f=d,window[k](l,"event","Scroll Depth","Pixel Depth",(250*Math.floor(d/250)).toString(),1,{nonInteraction:a.nonInteraction})),a.userTiming&&3<arguments.length&&window[k](l,"timing","Scroll Depth",b,q,c)),t&&(_gaq.push(["_trackEvent","Scroll Depth",b,c,1,a.nonInteraction]),a.pixelDepth&&2<arguments.length&&d>f&&(f=d,_gaq.push(["_trackEvent","Scroll Depth","Pixel Depth",(250*Math.floor(d/250)).toString(),1,a.nonInteraction])),a.userTiming&&3<arguments.length&&
+_gaq.push(["_trackTiming","Scroll Depth",b,q,c,100])))}function w(a,e,d){c.each(a,function(a,b){-1===c.inArray(a,g)&&e>=b&&(u("Percentage",a,e,d),g.push(a))})}function x(a,e,d){c.each(a,function(a,b){-1===c.inArray(b,g)&&c(b).length&&e>=c(b).offset().top&&(u("Elements",b,e,d),g.push(b))})}function y(a,c){var b,e,l,g=null,f=0,k=function(){f=new Date;g=null;l=a.apply(b,e)};return function(){var d=new Date;f||(f=d);var h=c-(d-f);return b=this,e=arguments,0>=h?(clearTimeout(g),g=null,f=d,l=a.apply(b,
+e)):g||(g=setTimeout(k,h)),l}}function r(){p=!0;m.on("scroll.scrollDepth",y(function(){var b=c(document).height(),e=window.innerHeight?window.innerHeight:m.height();e=m.scrollTop()+e;b={"25%":parseInt(.25*b,10),"50%":parseInt(.5*b,10),"75%":parseInt(.75*b,10),"100%":b-5};var d=+new Date-z;return g.length>=a.elements.length+(a.percentage?4:0)?(m.off("scroll.scrollDepth"),void(p=!1)):(a.elements&&x(a.elements,e,d),void(a.percentage&&w(b,e,d)))},500))}var z=+new Date;a=c.extend({},v,a);c(document).height()<
+a.minHeight||(a.gaGlobal?(n=!0,k=a.gaGlobal):"function"==typeof ga?(n=!0,k="ga"):"function"==typeof __gaTracker&&(n=!0,k="__gaTracker"),"undefined"!=typeof _gaq&&"function"==typeof _gaq.push&&(t=!0),"function"==typeof a.eventHandler?h=a.eventHandler:"undefined"==typeof window[a.dataLayer]||"function"!=typeof window[a.dataLayer].push||a.gtmOverride||(h=function(b){window[a.dataLayer].push(b)}),c.scrollDepth.reset=function(){g=[];f=0;m.off("scroll.scrollDepth");r()},c.scrollDepth.addElements=function(b){"undefined"!=
+typeof b&&c.isArray(b)&&(c.merge(a.elements,b),p||r())},c.scrollDepth.removeElements=function(b){"undefined"!=typeof b&&c.isArray(b)&&c.each(b,function(b,d){var e=c.inArray(d,a.elements),f=c.inArray(d,g);-1!=e&&a.elements.splice(e,1);-1!=f&&g.splice(f,1)})},r())},c.scrollDepth});jQuery.scrollDepth({minHeight:0,elements:[],percentage:!0,userTiming:!0,pixelDepth:!1,nonInteraction:!0});</script><iframe src="https://dbb23d9b630ca9ea1d3d31bc3754c6e6.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html" style="visibility: hidden; display: none;"></iframe>
+                        <img src="https://analytics.twitter.com/i/adsct?type=javascript&amp;version=2.0.13&amp;p_id=Twitter&amp;p_user_id=0&amp;txn_id=nxbua&amp;events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&amp;tw_order_quantity=0&amp;tw_sale_amount=0&amp;tw_iframe_status=0&amp;event_id=183695ee-a363-4f9a-9a3c-84d143a42667&amp;tw_document_href=https%3A%2F%2Fwww.greenbiz.com%2F" style="display: none;" width="1" height="1"><img src="https://t.co/i/adsct?type=javascript&amp;version=2.0.13&amp;p_id=Twitter&amp;p_user_id=0&amp;txn_id=nxbua&amp;events=%5B%5B%22pageview%22%2C%7B%7D%5D%5D&amp;tw_order_quantity=0&amp;tw_sale_amount=0&amp;tw_iframe_status=0&amp;event_id=183695ee-a363-4f9a-9a3c-84d143a42667&amp;tw_document_href=https%3A%2F%2Fwww.greenbiz.com%2F" style="display: none;" width="1" height="1"><iframe src="https://www.google.com/recaptcha/api2/aframe" style="display: none;" width="0" height="0"></iframe></body></html>
