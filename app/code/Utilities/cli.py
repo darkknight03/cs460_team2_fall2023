@@ -1,5 +1,9 @@
 import argparse
+<<<<<<< HEAD:app/code/Utilities/cli.py
 from app.code.Utilities.classify import classify_email, classify_url
+=======
+from classify import classify_email, classify_url
+>>>>>>> 5176d1e (integration of cli with html model):project/cli.py
 from email_modeling.read_email import read_email
 
 def cli():
