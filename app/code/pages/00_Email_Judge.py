@@ -3,6 +3,7 @@ import re
 import streamlit as st
 import requests
 from PIL import Image
+from io import StringIO
 
 try:
 
@@ -68,6 +69,11 @@ try:
             if uploaded_file and st.button("Process"):
              #        result = your_processing_script.process_content(uploaded_file)
                 st.write("Processing result:")
+
+                # To convert to a string based IO:
+                stringio = StringIO(uploaded_file.getvalue().decode("utf-8"))
+                string_data = stringio.read()
+                st.write(string_data)
                 download_button = st.button("Download Processed File")
             # pass to script accordingly
             
