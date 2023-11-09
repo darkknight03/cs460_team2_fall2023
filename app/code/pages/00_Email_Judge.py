@@ -3,7 +3,12 @@ import re
 import streamlit as st
 import requests
 from PIL import Image
-from Utilities.cli import is_phishing_email, is_phishing_url
+from io import StringIO
+
+def read_file(file):
+    with open(input, "r", encoding="utf-8", errors="ignore") as f:
+        text = f.read()
+        st.write(text)
 
 try:
 
@@ -69,7 +74,15 @@ try:
             if uploaded_file and st.button("Process"):
              #        result = your_processing_script.process_content(uploaded_file)
                 st.write("Processing result:")
-                download_button = st.button("Download Processed File")
+                # st.write(type(uploaded_file))
+                # read_file(uploaded_file)
+
+                # To convert to a string based IO:
+                stringio = StringIO(uploaded_file.getvalue().decode("utf-8"))
+                st.write(type(stringio))
+                string_data = stringio.read()
+                st.write(string_data)
+                # download_button = st.button("Download Processed File")
             # pass to script accordingly
             
     #download button
