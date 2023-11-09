@@ -54,13 +54,14 @@ def preprocess(text, model=sbert_model):
         num_urls = len(urls)
 
         # Calculate SBERT embeddings using the "all-MiniLM-L12-v2" model
-        sbert_embeddings = model.encode([cleaned_text])
+        # sbert_embeddings = model.encode([cleaned_text])
 
-        # Convert SBERT embeddings to a string
-        sbert_embeddings_str = ' '.join(map(str, sbert_embeddings[0]))
+        # # Convert SBERT embeddings to a string
+        # sbert_embeddings_str = ' '.join(map(str, sbert_embeddings[0]))
 
-        # Add scores, URL count, and SBERT embeddings as features
-        cleaned_text += f' UrgencyScore:{urgency_score} PersuasiveScore:{persuasive_score} ImpersonationScore:{impersonation_score} NumURLs:{num_urls} SBERT:{sbert_embeddings_str}'
+        # # Add scores, URL count, and SBERT embeddings as features
+        # cleaned_text += f' UrgencyScore:{urgency_score} PersuasiveScore:{persuasive_score} ImpersonationScore:{impersonation_score} NumURLs:{num_urls} SBERT:{sbert_embeddings_str}'
+        cleaned_text += f' UrgencyScore:{urgency_score} PersuasiveScore:{persuasive_score} ImpersonationScore:{impersonation_score} NumURLs:{num_urls}'
 
         return cleaned_text
     else:

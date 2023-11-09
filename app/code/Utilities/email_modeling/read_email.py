@@ -9,8 +9,8 @@ import os
 # from win32com import client # pip install pywin32, for .msg files, figure out how to install
 
 # read .eml files and separate header (subject, sender, links), text, and attachments
-def read_eml(input):
-    with open(input, "r", encoding="utf-8", errors="ignore") as file:
+def read_eml(input_file):
+    with open(input_file, "r", encoding="utf-8", errors="ignore") as file:
         email_text = file.read()
 
     # Parse the email
@@ -57,6 +57,53 @@ def read_eml(input):
     email_content = "".join(filter(lambda x: x in string.printable, email_content))
 
     return subject, sender, links, email_content, has_attachments
+
+def read_eml_string(email_text):
+    # Parse the email
+    msg = email.message_from_string(email_text)
+
+    # Initialize variables to store decoded subject and sender
+    subject, sender = "", ""
+
+    has_attachments = False
+
+    # Decode subject if available
+    if msg["subject"]:
+        subject, encoding = decode_header(msg["subject"])[0]
+        if encoding:
+            subject = subject.decode(encoding)
+
+    # Decode sender if available
+    if msg["from"]:
+        sender, encoding = decode_header(msg["from"])[0]
+        if encoding:
+            sender = sender.decode(encoding)
+
+    if msg["X-MS-Has-Attach"]:
+        if msg["X-MS-Has-Attach"] == "yes":
+            has_attachments = True
+
+    # Extract email content (plain text and HTML)
+    email_content = ""
+    for part in msg.walk():
+        if part.get_content_type() == "text/plain":
+            payload = part.get_payload(decode=True)
+            charset = part.get_content_charset()
+            if charset:
+                email_content += payload.decode(charset)
+            else:
+                # If charset is not available, use UTF-8 as a fallback
+                email_content += payload.decode("utf-8", errors="ignore")
+
+    # Extract links from email_content using a comprehensive regex pattern
+    links = re.findall(r'https?://\S+|www\.\S+|ftp://\S+|ftps?://\S+|mailto:\S+|\b(?:[a-z]+://\S+)', email_content)
+
+
+    # Clean the email content to remove non-printable characters
+    email_content = "".join(filter(lambda x: x in string.printable, email_content))
+
+    return subject, sender, links, email_content, has_attachments
+
 
 # Function to read .pst files and separate header (subject, sender, links) and text
 def read_pst(input):

@@ -11,9 +11,9 @@ def classify_email(email):
 
     # Load your trained model, label encoder, and TF-IDF vectorizer
     print("Loading model...")
-    loaded_model = joblib.load('email_modeling/logistic.pkl')
-    label_encoder = joblib.load('email_modeling/label_encoder.pkl')
-    tfidf_vectorizer = joblib.load('email_modeling/tfidf_vectorizer.pkl')
+    loaded_model = joblib.load('Utilities/email_modeling/logistic.pkl')
+    label_encoder = joblib.load('Utilities/email_modeling/label_encoder.pkl')
+    tfidf_vectorizer = joblib.load('Utilities/email_modeling/tfidf_vectorizer.pkl')
 
     print("Classifying email...")
     # Transform the preprocessed email text using the same vectorizer
