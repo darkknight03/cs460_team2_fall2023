@@ -42,13 +42,14 @@ def is_phishing_email(file):
         return False
 
 def is_phishing_url(url):
-    is_phishing = classify_url(url)
-    if is_phishing:
-        print("This URL may be a phishing attempt!")
-        return True
-    else:
-        print("This URL is safe.")
-        return False
+    return classify_url(url)
+    # is_phishing = classify_url(url)
+    # if is_phishing:
+    #     print("This URL may be a phishing attempt!")
+    #     return True
+    # else:
+    #     print("This URL is safe.")
+    #     return False
 
 
 if __name__ == "__main__":

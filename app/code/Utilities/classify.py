@@ -45,4 +45,4 @@ def classify_url(url):
     # Make a prediction using the loaded model
     predicted_class = loaded_model.predict(html_vector)
 
-    return predicted_class == 'p'
+    return predicted_class[0] == 'p'
