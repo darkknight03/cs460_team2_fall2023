@@ -1,9 +1,5 @@
 import argparse
-<<<<<<< HEAD:app/code/Utilities/cli.py
 from app.code.Utilities.classify import classify_email, classify_url
-=======
-from classify import classify_email, classify_url
->>>>>>> 5176d1e (integration of cli with html model):project/cli.py
 from email_modeling.read_email import read_email
 
 def cli():
@@ -34,6 +30,26 @@ def cli():
             print("This URL is safe.")
     else:
         print("Please specify a file or URL to check for phishing.")
+
+def is_phishing_email(file):
+    subject, sender, links, email_content, has_attachments = read_email(file)
+    is_phishing = classify_email(email_content)
+    if is_phishing:
+        print("This file may be a phishing attempt!")
+        return True
+    else:
+        print("This file is safe.")
+        return False
+
+def is_phishing_url(url):
+    is_phishing = classify_url(url)
+    if is_phishing:
+        print("This URL may be a phishing attempt!")
+        return True
+    else:
+        print("This URL is safe.")
+        return False
+
 
 if __name__ == "__main__":
     cli()

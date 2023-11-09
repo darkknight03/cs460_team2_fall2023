@@ -3,6 +3,7 @@ import re
 import streamlit as st
 import requests
 from PIL import Image
+from Utilities.cli import is_phishing_email, is_phishing_url
 
 try:
 
