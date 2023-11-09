@@ -1,7 +1,7 @@
 # Description: This file contains the code to classify an email as phishing or not phishing.
 import joblib
-from email_modeling.preprocess import preprocess
-from url_modeling.preprocess_html import read_html
+from Utilities.email_modeling.preprocess import preprocess
+from Utilities.url_modeling.preprocess_html import read_html
 
 
 def classify_email(email):
@@ -35,8 +35,8 @@ def classify_url(url):
 
     # Load your trained mode and TF-IDF vectorizer
     print("Loading model...")
-    loaded_model = joblib.load('url_modeling/model_svc.pkl')
-    tfidf_vectorizer = joblib.load('url_modeling/tfidf_vectorizer_html.pkl')
+    loaded_model = joblib.load('Utilities/url_modeling/model_svc.pkl')
+    tfidf_vectorizer = joblib.load('Utilities/url_modeling/tfidf_vectorizer_html.pkl')
 
     print("Classifying html...")
     # Transform the preprocessed html text using the same vectorizer

@@ -1,6 +1,6 @@
 import argparse
-from app.code.Utilities.classify import classify_email, classify_url
-from email_modeling.read_email import read_email
+from Utilities.classify import classify_email, classify_url
+from Utilities.email_modeling.read_email import read_email
 
 def cli():
     parser = argparse.ArgumentParser(description="Phishing Detector")

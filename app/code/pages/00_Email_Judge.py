@@ -4,6 +4,7 @@ import streamlit as st
 import requests
 from PIL import Image
 from io import StringIO
+from Utilities.cli import is_phishing_url, is_phishing_email
 
 def read_file(file):
     with open(input, "r", encoding="utf-8", errors="ignore") as f:
@@ -112,9 +113,10 @@ try:
     #        st.markdown(link_form, unsafe_allow_html=True)
             user_input = st.text_input("Enter a URL to be analyzed:")
             if st.button("Submit"):
+                # Validate user_input
                 if user_input:
                     st.write(f"You submitted the following link: {user_input}")
-                    #pass the url to script, return result
+                    is_phishing_url(user_input)
                 else:
                     st.warning("Please enter a valid link.")
             
