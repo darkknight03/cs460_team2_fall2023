@@ -275,7 +275,7 @@ criteria = {
 phishing_score = sum(heuristics[heuristic] * criteria[heuristic] for heuristic in heuristics)
 
 # a threshold (adjust as needed)
-threshold = 8
+threshold = 2.9
 
 # Determine if the URL is potentially phishing
 is_phishing = phishing_score > threshold
