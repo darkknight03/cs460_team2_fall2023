@@ -10,7 +10,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report
 from sklearn.model_selection import GridSearchCV
 import joblib
-from project.email.preprocess import preprocess
+from preprocess import preprocess
 
 
 # Regression Model
@@ -46,7 +46,7 @@ def regression_model(dataset='phishing.csv'):
     y_test = test_data['Type']
 
     # Define the model
-    model = LogisticRegression(max_iter=1000)
+    model = LogisticRegression(max_iter=1000, n_jobs=-1)
 
     # Define hyperparameters to tune
     param_grid = {

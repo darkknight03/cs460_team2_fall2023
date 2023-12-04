@@ -5,6 +5,31 @@ from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
 import re
 
+from urllib.parse import urlparse
+import dns.resolver, dns.rdatatype
+from functools import cache
+
+@cache
+def get_hostname_records(hostname):
+    ans = ''
+
+    for record in ['A', 'AAAA', 'NS', 'MX']:
+        try:
+            res = dns.resolver.resolve(hostname, record)
+
+            ans += f'{record}Records:{len(res)},{res.ttl} '
+        except Exception:
+            pass
+
+    return ans
+
+def get_url_domain(url):
+    try:
+        return urlparse(url).netloc
+    except Exception:
+        print("bad url:", url)
+        return None
+
 # Download NLTK resources if not already downloaded
 nltk.download('stopwords', quiet=True)
 nltk.download('punkt', quiet=True)
@@ -13,11 +38,10 @@ nltk.download('punkt', quiet=True)
 sbert_model = SentenceTransformer('all-MiniLM-L12-v2')
 
 # Preprocess text data with SBERT embeddings
-def preprocess(text, model=sbert_model):
-
-    if isinstance(text, str):
+def preprocess(raw_text, model=sbert_model):
+    if isinstance(raw_text, str):
         # Convert text to lowercase
-        text = text.lower()
+        text = raw_text.lower()
 
         # Remove punctuation
         text = ''.join([char for char in text if char not in string.punctuation])
@@ -50,7 +74,7 @@ def preprocess(text, model=sbert_model):
         impersonation_score = sum(cleaned_text.count(keyword) for keyword in impersonation_keywords)
 
         # Count the number of URLs
-        urls = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', cleaned_text)
+        urls = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', raw_text)
         num_urls = len(urls)
 
         # Calculate SBERT embeddings using the "all-MiniLM-L12-v2" model
@@ -61,6 +85,11 @@ def preprocess(text, model=sbert_model):
 
         # Add scores, URL count, and SBERT embeddings as features
         cleaned_text += f' UrgencyScore:{urgency_score} PersuasiveScore:{persuasive_score} ImpersonationScore:{impersonation_score} NumURLs:{num_urls} SBERT:{sbert_embeddings_str}'
+
+        if len(urls) > 0:
+            unique_hostnames = set(filter(lambda x: x is not None, map(get_url_domain, urls)))
+            hostname_records = list(map(get_hostname_records, unique_hostnames))
+            cleaned_text += ' ' + ''.join(hostname_records)
 
         return cleaned_text
     else:
