@@ -1,5 +1,5 @@
 import argparse
-from Utilities.classify import classify_email, classify_url
+from Utilities.classify import classify_email, classify_url_real
 from Utilities.email_modeling.read_email import read_email, read_eml_string
 
 def cli():
@@ -42,7 +42,7 @@ def is_phishing_email(email_text):
         return False
 
 def is_phishing_url(url):
-    return classify_url(url)
+    return classify_url_real(url)
     # is_phishing = classify_url(url)
     # if is_phishing:
     #     print("This URL may be a phishing attempt!")

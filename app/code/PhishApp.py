@@ -36,7 +36,7 @@ try:
 
     # ---- HEADER SECTION ----
     with st.container():
-        st.subheader("Welcome to the phishing email detection website :wave:")
+        st.subheader("Welcome to the phishing email and url detection website :wave:")
         st.write("[Contact Us? >](<email addr>)")
 
     # ---- OUR MISSION ----
@@ -48,10 +48,7 @@ try:
             st.write("##")
             st.write(
                 """
-                -
-                -
-                -
-                -
+                Our mission is to empower individuals and organizations by providing cutting-edge tools to detect and thwart phishing attacks. We are dedicated to creating a safer online environment through innovative technology and education. By staying ahead of evolving cyber threats, we strive to be a trusted ally in the ongoing battle against phishing scams. Join us in our commitment to cybersecurity, where every click counts in the fight against online fraud. Together, let's build a more secure digital future.
                 """
             )
         #with right_column: #for demo video !!!!

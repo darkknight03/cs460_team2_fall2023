@@ -227,62 +227,65 @@ def status_bar_change(url):
 # url = "https://drive.google.com/file/d/1gGAMknkZAiK8m01vtpQJebwuTdoxAMVP/view?usp=sharing"
 
 #read url to check
-parser = argparse.ArgumentParser(description='Process a URL.')
-parser.add_argument('-url', '--url', type=str, required=True, help='URL to process')
-args = parser.parse_args()
-url = args.url
+def url_analysis(url):
+  # parser = argparse.ArgumentParser(description='Process a URL.')
+  # parser.add_argument('-url', '--url', type=str, required=True, help='URL to process')
+  # args = parser.parse_args()
+  # url = args.url
 
 
-# Define heuristics and their weights
-# ref: https://drive.google.com/file/d/1gGAMknkZAiK8m01vtpQJebwuTdoxAMVP/view?usp=sharing, pp.26
-heuristics = {
-    #'URL Length': 0,
-    #'Contains IP Address': 0.09,
-    'SSL Certificate': 3,
-    #'Keyword Match': 0.1,
-    'Special Char': 1,
-    'Domain Age': 4,
-    'Contains At': 1,
-    'Dots Count': 1,
-   # 'Slashes Count': 0,
-    #'Redirect URLs': 0,
-    'Right Click Disable': 1,
-    #'Status Bar Change': 0,
-    'Exp Date': 2,
-    'Creation_Date': 5
-}
-
-# Calculate criteria values
-criteria = {
-#  'URL Length': url_length(url),
-  #'Contains IP Address': contains_ip_address(url),
-  'SSL Certificate': _ssl_certificate(url),
-  #'Keyword Match': keyword_match(url),
-  'Special Char': special_char(url),
-  'Domain Age': domain_age(url),
-  'Contains At': contains_at(url),
-  'Dots Count': dots_count(url),
-#   'Slashes Count': slashes_count(url),
-  #'Redirect URLs': count_redirect_urls(url),
-  'Right Click Disable': right_click_disable(url),
-#  'Status Bar Change': status_bar_change(url)
-  'Exp Date': domain_exp_date(url),
-  'Creation_Date': domain_creation_date(url)
+  # Define heuristics and their weights
+  # ref: https://drive.google.com/file/d/1gGAMknkZAiK8m01vtpQJebwuTdoxAMVP/view?usp=sharing, pp.26
+  heuristics = {
+      #'URL Length': 0,
+      #'Contains IP Address': 0.09,
+      'SSL Certificate': 3,
+      #'Keyword Match': 0.1,
+      'Special Char': 1,
+      'Domain Age': 4,
+      'Contains At': 1,
+      'Dots Count': 1,
+    # 'Slashes Count': 0,
+      #'Redirect URLs': 0,
+      'Right Click Disable': 1,
+      #'Status Bar Change': 0,
+      'Exp Date': 2,
+      'Creation_Date': 5
   }
 
+  # Calculate criteria values
+  criteria = {
+  #  'URL Length': url_length(url),
+    #'Contains IP Address': contains_ip_address(url),
+    'SSL Certificate': _ssl_certificate(url),
+    #'Keyword Match': keyword_match(url),
+    'Special Char': special_char(url),
+    'Domain Age': domain_age(url),
+    'Contains At': contains_at(url),
+    'Dots Count': dots_count(url),
+  #   'Slashes Count': slashes_count(url),
+    #'Redirect URLs': count_redirect_urls(url),
+    'Right Click Disable': right_click_disable(url),
+  #  'Status Bar Change': status_bar_change(url)
+    'Exp Date': domain_exp_date(url),
+    'Creation_Date': domain_creation_date(url)
+    }
 
-# Calculate the phishing score
-phishing_score = sum(heuristics[heuristic] * criteria[heuristic] for heuristic in heuristics)
 
-# a threshold (adjust as needed)
-threshold = 2.9
+  # Calculate the phishing score
+  phishing_score = sum(heuristics[heuristic] * criteria[heuristic] for heuristic in heuristics)
 
-# Determine if the URL is potentially phishing
-is_phishing = phishing_score > threshold
+  # a threshold (adjust as needed)
+  threshold = 2.9
 
-# Output the result
-if is_phishing:
-    print(f"The URL '{url}' is classified as potentially phishing.")
-else:
-    print(f"The URL '{url}' is likely not phishing.")
+  # Determine if the URL is potentially phishing
+  is_phishing = phishing_score > threshold
+
+  # Output the result
+  if is_phishing:
+      # print(f"The URL '{url}' is classified as potentially phishing.")
+      return True
+  else:
+      # print(f"The URL '{url}' is likely not phishing.")
+      return False
 

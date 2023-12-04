@@ -41,10 +41,10 @@ try:
             
         
         with left_column:
-            st.subheader("URL Analysis (if any) 🔗")
+            st.subheader("URL Analysis 🔗")
             st.write(
                 """
-                <Description>
+                We prioritize your safety online. Our URL analysis feature is designed to meticulously scrutinize web addresses embedded in emails or messages, helping you make informed decisions about their legitimacy. By employing advanced algorithms, we assess URLs for potential phishing, malware, or fraudulent activities.
                 """
             )
 

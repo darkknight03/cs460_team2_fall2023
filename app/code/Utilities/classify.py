@@ -2,6 +2,7 @@
 import joblib
 from Utilities.email_modeling.preprocess import preprocess
 from Utilities.url_modeling.preprocess_html import read_html
+from Utilities.url import url_analysis
 
 
 def classify_email(email):
@@ -46,3 +47,6 @@ def classify_url(url):
     predicted_class = loaded_model.predict(html_vector)
 
     return predicted_class[0] == 'p'
+
+def classify_url_real(url):
+    return url_analysis(url) or classify_url(url)
